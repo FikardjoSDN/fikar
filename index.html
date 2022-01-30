@@ -1,0 +1,43 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href= "https://www.w3schools.com/w3css/4/w3.css">
+<img src="foto1.jpg" width=100% height=30%>
+<div class="w3-bar w3-black">
+	 <button class="w3-bar-item w3-button" onclick="openKota('profile')">Profile</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('bmw320i')">BMW 320i</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('bmw330i')">BMW 330i</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('bmw430i')">BMW 430i</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('bmw440i')">BMW 440i</button>
+</div>
+<div id="profile" class="w3-container kota" style="display:none">
+<center>
+<p>NIM : 10121028<br>Nama : Zulfikar Podomi<br>Kelas : IF 1 2021</p>
+    <img class="w3-animate-fading" src="fikar.jpg" style="width:40%">
+</center>
+</div>
+<div id="bmw320i" class="w3-container kota" style="display:none">
+    <img class="w3-animate-fading" src="foto2.jpg" style="width:40%">
+</div>
+<div id="bmw330i" class="w3-container kota" style="display:none">
+    <img class="w3-animate-bottom" src="foto3.jpg" style="width:40%">
+</div>
+<div id="bmw430i" class="w3-container kota" style="display:none">
+    <img class="w3-animate-top" src="foto4.jpg" style="width:40%">
+</div>
+<div id="bmw440i" class="w3-container kota" style="display:none">
+    <img class="w3-animate-zoom" src="foto5.jpg" style="width:40%">
+</div>
+<script>
+    function openKota(namaKota) {
+     var i;
+     var x = document.getElementsByClassName("kota");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+     }
+     document.getElementById(namaKota).style.display = "block";
+    }
+    </script>
+    </body>
+    </html>
+
